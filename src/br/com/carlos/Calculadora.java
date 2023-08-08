@@ -8,8 +8,6 @@ public class Calculadora {
 
 	public static void main (String [] args) {
 		
-		Calculadora calc = new Calculadora();
-		
 		System.out.println("Qual a primeira nota ?");
 		double num1 = scanner.nextDouble();
 		
@@ -23,16 +21,10 @@ public class Calculadora {
 		double num4 = scanner.nextDouble();
 		
 		System.out.println("\n============================\n"
-				+ "A média: "+calcularMedia(num1, num2, num3, num4)
+				+ "A média: "+(num1+num2+num3+num4)/4
 				+ "\n============================\n");
 		
 		main(args);
-		
-	}
-	
-	public static double calcularMedia (double num1, double num2, double num3, double num4) {
-		
-		return (num1+num2+num3+num4)/4;
 		
 	}
 	
